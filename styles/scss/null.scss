@@ -29,8 +29,8 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "Open Sans", sans-serif;
-  background: #191919;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  background: $main-backround-color;
   color: #FFF;
   font-size: 12px;
   font-weight: 400;
@@ -73,4 +73,17 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
 }

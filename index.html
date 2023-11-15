@@ -3,22 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/Ylab-icon.ico">
+    <link rel="icon" href="./assets/img/icons/Ylab-icon.ico">
+
     <link rel="stylesheet" href="./styles/css/index.css">
     <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <main class="main">
-            <div class="main__form form">
-                <form>
-                    <input type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='Ваше имя'>
-                    <input type='password' name="password" autocomplete="current-password" placeholder='Ваш пароль'>
+        <header class="header"></header>
 
-                    <input type=“submit” value=“Отправить”>
-                </form>
+        <main class="main">
+            <div class="main__form-container auth__form">
+
+                <div class="auth__form-header auth__header">
+                    <div class="auth__form-icon">
+                        <a href="" class="auth__form-link">
+                            <img class="auth__form-img" src="./assets/img/icons/Ylab-icon.ico" alt="Icon">
+                        </a>
+                    </div>
+                    <div class="auth__header-switch">
+                        <button class="auth__header-create button">
+                            Create
+                            <div class="auth__header-backlight"></div>
+                        </button>
+                        <button class="auth__header-login button">
+                            Log in
+                        </button>
+                    </div>
+                    <h2 class="auth__form-title">
+                        an account in ylab
+                    </h2>
+                </div>
+                 
+                <div class="form-container">
+                    <form class="auth__form-body auth__form-create">
+                        <input class="auth__form-username auth__form-input" type='text' name='login' autofocus="autofocus" autocorrect="off" placeholder='name'>
+                        <input class="auth__form-username auth__form-input" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
+                        <div class="auth__form-password-container">
+                            <input class="auth__form-password auth__form-input" type='password' name="password" autocomplete="current-password" placeholder='password'>
+    
+                            <div class="auth__form-container">
+                                <div class="auth__form-eye-hide auth__form-eye">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                   
+                                   <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+                                   fill="#000000" stroke="none">
+                                   <path d="M126 133 c-4 -4 -22 -6 -40 -5 -24 2 -42 -4 -62 -21 -28 -25 -28 -26
+                                   -10 -45 10 -12 15 -26 11 -34 -4 -7 20 14 54 47 33 33 61 61 61 62 0 5 -7 3
+                                   -14 -4z m-46 -22 c-17 -5 -27 -16 -30 -34 -5 -26 -6 -27 -25 -13 -20 16 -20
+                                   16 5 36 14 11 36 19 50 19 l25 -1 -25 -7z m0 -26 c-7 -9 -15 -13 -17 -11 -7 7
+                                   7 26 19 26 6 0 6 -6 -2 -15z"/>
+                                   <path d="M140 97 c12 -17 11 -21 -10 -37 -14 -11 -36 -21 -50 -23 -25 -4 -25
+                                   -4 2 -6 16 0 38 9 55 23 28 24 28 25 9 43 -19 17 -19 17 -6 0z"/>
+                                   <path d="M90 65 c-8 -9 -8 -15 -2 -15 12 0 26 19 19 26 -2 2 -10 -2 -17 -11z"/>
+                                   </g>
+                                   </svg>
+                                </div>
+                                <div class="auth__form-eye-open auth__form-eye hide">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                   
+                                   <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+                                   fill="#000000" stroke="none">
+                                   <path d="M32 110 c-40 -24 -38 -36 9 -63 35 -20 36 -20 74 -1 51 25 53 37 12
+                                   63 -42 26 -53 26 -95 1z m98 -16 c12 -12 12 -16 -2 -31 -21 -21 -74 -21 -95
+                                   -1 -41 42 53 73 97 32z"/>
+                                   <path d="M60 94 c-11 -12 -10 -18 3 -32 16 -15 18 -15 34 0 13 14 14 20 3 32
+                                   -16 20 -24 20 -40 0z m36 -5 c10 -17 -13 -36 -27 -22 -12 12 -4 33 11 33 5 0
+                                   12 -5 16 -11z"/>
+                                   </g>
+                                   </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <input class="auth__form-submit" type="submit" value="register">
+                    </form>
+                    <form class="auth__form-body auth__form-login">
+                        <input class="auth__form-username auth__form-input" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
+                        <div class="auth__form-password-container">
+                            <input class="auth__form-password auth__form-input" type='password' name="password" autocomplete="current-password" placeholder='password'>
+    
+                            <div class="auth__form-container">
+                                <div class="auth__form-eye-hide auth__form-eye">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                   
+                                   <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+                                   fill="#000000" stroke="none">
+                                   <path d="M126 133 c-4 -4 -22 -6 -40 -5 -24 2 -42 -4 -62 -21 -28 -25 -28 -26
+                                   -10 -45 10 -12 15 -26 11 -34 -4 -7 20 14 54 47 33 33 61 61 61 62 0 5 -7 3
+                                   -14 -4z m-46 -22 c-17 -5 -27 -16 -30 -34 -5 -26 -6 -27 -25 -13 -20 16 -20
+                                   16 5 36 14 11 36 19 50 19 l25 -1 -25 -7z m0 -26 c-7 -9 -15 -13 -17 -11 -7 7
+                                   7 26 19 26 6 0 6 -6 -2 -15z"/>
+                                   <path d="M140 97 c12 -17 11 -21 -10 -37 -14 -11 -36 -21 -50 -23 -25 -4 -25
+                                   -4 2 -6 16 0 38 9 55 23 28 24 28 25 9 43 -19 17 -19 17 -6 0z"/>
+                                   <path d="M90 65 c-8 -9 -8 -15 -2 -15 12 0 26 19 19 26 -2 2 -10 -2 -17 -11z"/>
+                                   </g>
+                                   </svg>
+                                </div>
+                                <div class="auth__form-eye-open auth__form-eye hide">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                   
+                                   <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+                                   fill="#000000" stroke="none">
+                                   <path d="M32 110 c-40 -24 -38 -36 9 -63 35 -20 36 -20 74 -1 51 25 53 37 12
+                                   63 -42 26 -53 26 -95 1z m98 -16 c12 -12 12 -16 -2 -31 -21 -21 -74 -21 -95
+                                   -1 -41 42 53 73 97 32z"/>
+                                   <path d="M60 94 c-11 -12 -10 -18 3 -32 16 -15 18 -15 34 0 13 14 14 20 3 32
+                                   -16 20 -24 20 -40 0z m36 -5 c10 -17 -13 -36 -27 -22 -12 12 -4 33 11 33 5 0
+                                   12 -5 16 -11z"/>
+                                   </g>
+                                   </svg>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <input class="auth__form-submit" type="submit" value="log in">
+                    </form>
+                </div>
+                
             </div>
         </main>
+
+        <footer class="footer"></footer>
     </div>
     <script src="./scripts/index.js"></script>
 </body>
