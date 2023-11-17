@@ -36,6 +36,11 @@ html, body {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
 input, button, textarea {
   font-family: inherit;
 }
@@ -94,17 +99,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
+  width: 100%;
+  max-width: 450px;
   display: flex;
+  justify-content: center;
   flex: 1 1 auto;
 }
 
 .main__form-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 30% 15px;
 }
 
 .auth__form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .auth__form-body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .auth__form-input {
+  width: 100%;
   border-radius: 5px;
   padding: 5px 0 5px 10px;
   transition: all 1s;
@@ -225,6 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .auth__form-password-container {
+  width: 100%;
   margin-top: 15px;
   position: relative;
 }
