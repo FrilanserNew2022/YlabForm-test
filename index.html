@@ -40,10 +40,10 @@
                  
                 <div class="form-container">
                     <form class="auth__form-body auth__form-create">
-                        <input class="auth__form-username auth__form-input" id="username" type='text' name='login' autofocus="autofocus" autocorrect="off" placeholder='name'>
-                        <input class="auth__form-email auth__form-input" id="email" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
+                        <input class="auth__form-username auth__form-input auth__form-username-create" id="username" type='text' name='login' autofocus="autofocus" autocorrect="off" placeholder='name'>
+                        <input class="auth__form-email auth__form-input auth__form-email-create" id="email" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
                         <div class="auth__form-password-container">
-                            <input class="auth__form-password auth__form-input" id="password" type='password' name="password" autocomplete="current-password" placeholder='password'>
+                            <input class="auth__form-password auth__form-input auth__form-password-create" id="password" type='password' name="password" autocomplete="current-password" placeholder='password'>
     
                             <div class="auth__form-container">
                                 <div class="auth__form-eye-hide auth__form-eye">
@@ -84,12 +84,12 @@
                             
                         </div>
     
-                        <input class="auth__form-submit" type="submit" value="register">
+                        <input class="auth__form-submit auth__form-submit-create" type="submit" value="register">
                     </form>
                     <form class="auth__form-body auth__form-login hidden">
-                        <input class="auth__form-username auth__form-input" id="authFormUserName" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
+                        <input class="auth__form-email auth__form-input auth__form-email-login" id="email-login" type='text' name='login' autocomplete="username" autofocus="autofocus" autocorrect="off" placeholder='email'>
                         <div class="auth__form-password-container">
-                            <input class="auth__form-password auth__form-input" id="authFormPassword" type='password' name="password" autocomplete="current-password" placeholder='password'>
+                            <input class="auth__form-password auth__form-input auth__form-password-login" id="authFormPassword" type='password' name="password" autocomplete="current-password" placeholder='password'>
     
                             <div class="auth__form-container">
                                 <div class="auth__form-eye-hide auth__form-eye">
@@ -130,7 +130,7 @@
                             
                         </div>
     
-                        <input class="auth__form-submit" id="authForm" type="submit" value="log in">
+                        <input class="auth__form-submit auth__form-submit-login" id="authForm" type="submit" value="log in">
                     </form>
                 </div>
                 
